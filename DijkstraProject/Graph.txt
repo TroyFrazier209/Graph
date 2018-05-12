@@ -1,0 +1,10 @@
+A  B 25  F 1000 G 32
+B  A 25  C 50 
+C  B 50  D 35
+D  C 35  E 100
+E  D 100  F 10
+F  E 10  A 1000
+G  A 32  H 50  J 25
+H  G 50  I 10
+I  H 10  J 35
+J  G 25  I 35
