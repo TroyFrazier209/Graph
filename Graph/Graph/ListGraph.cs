@@ -135,8 +135,13 @@ namespace Graph
         /// </summary>
         /// <param name="_name">Name of the new vertex</param>
         public void addNode(string _name) {
-            nodeName.Add(_name,nodeName.Count);
-            adList.Add(new List<Node>());
+            try {
+                nodeName.Add(_name, nodeName.Count);
+                adList.Add(new List<Node>());
+            }
+            catch(Exception e) {
+                Console.WriteLine("Node already exists. No Node was added");
+            }
         }
         /// <summary>
         /// Removes alls the edges of a vertex and then the vertex itself
