@@ -1,0 +1,9 @@
+C:\Users\Troy Frazier\Desktop\Graph\Graph\bin\Debug\netcoreapp1.1\Graph.deps.json
+C:\Users\Troy Frazier\Desktop\Graph\Graph\bin\Debug\netcoreapp1.1\Graph.runtimeconfig.json
+C:\Users\Troy Frazier\Desktop\Graph\Graph\bin\Debug\netcoreapp1.1\Graph.runtimeconfig.dev.json
+C:\Users\Troy Frazier\Desktop\Graph\Graph\bin\Debug\netcoreapp1.1\Graph.dll
+C:\Users\Troy Frazier\Desktop\Graph\Graph\bin\Debug\netcoreapp1.1\Graph.pdb
+C:\Users\Troy Frazier\Desktop\Graph\Graph\obj\Debug\netcoreapp1.1\Graph.csprojResolveAssemblyReference.cache
+C:\Users\Troy Frazier\Desktop\Graph\Graph\obj\Debug\netcoreapp1.1\Graph.AssemblyInfo.cs
+C:\Users\Troy Frazier\Desktop\Graph\Graph\obj\Debug\netcoreapp1.1\Graph.dll
+C:\Users\Troy Frazier\Desktop\Graph\Graph\obj\Debug\netcoreapp1.1\Graph.pdb
