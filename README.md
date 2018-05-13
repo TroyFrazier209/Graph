@@ -15,8 +15,10 @@ Created By Troy Frazier <br />
 
 ChangeLog: <br />
 C# Graph: Version 1.0 completed on 5/5/2018<br />
-5/11/2018 Ensured that ListGraph class cannot add another node that is the same name as a pre-existing node
+5/11/2018 Ensured that ListGraph class cannot add another node that is the same name as a pre-existing node<br />
+
 <br />
+
 MIPS Graph Movement: Version 1.0 completed on 11/20/2017<br />
 
 <br />
