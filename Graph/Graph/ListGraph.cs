@@ -19,8 +19,8 @@ namespace Graph
         /// adList contains all the connections of a particular node that is defined in nodeName
         /// </summary>
         
-        Dictionary<string, int> nodeName = new Dictionary<string, int>();
-        List<List<Node>> adList = new List<List<Node>>();
+        protected Dictionary<string, int> nodeName = new Dictionary<string, int>();
+        protected List<List<Node>> adList = new List<List<Node>>();
 
         /// <summary>
         /// Constructor for a file path contained by a string
@@ -29,7 +29,6 @@ namespace Graph
         /// </summary>
         /// <param name="path"> file path to Adjacency List file in a txt format</param>
         public ListGraph(string path) {
-          
             try {
                 StreamReader read = File.OpenText(path);
                 for (int i = 0; !read.EndOfStream; i++) {
@@ -40,7 +39,7 @@ namespace Graph
                     List<Node> connections = new List<Node>();
                     for (int count = 1; count < nodes.Length - 1; count += 2) {
                         try {
-                            int x = Int32.Parse(nodes[count + 1]);
+                            double x = Double.Parse(nodes[count + 1]);
                             connections.Add(new Node(nodes[0],nodes[count], x));
                         }
                         catch (Exception) {
@@ -95,7 +94,6 @@ namespace Graph
                     int index = nodeName[nodeOne];
                     List<Node> line = adList[index];
                     for (int count = 0; count < line.Count; count++) {
-                        //Console.WriteLine(line[count].parent);
                         if (line[count].name.Equals(nodeTwo))
                             line.RemoveAt(count);
                     }
@@ -287,8 +285,8 @@ namespace Graph
             /// </summary>
             public string parent = "";
             public string name;
-            public int weight;
-            public Node(string _parent,string _name, int _weight) {
+            public double weight;
+            public Node(string _parent,string _name, double _weight) {
                 parent = _parent;
                 name = _name;
                 if (weight <= 0)
