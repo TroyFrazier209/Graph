@@ -1,4 +1,9 @@
-﻿using System;
+﻿/*
+ * Author Troy Frazier
+ * Last Updated: 5/14/2018
+ * Class: Creates an adjacency list representation of a graph
+ */
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Collections;
@@ -8,9 +13,7 @@ using System.Reflection;
 
 namespace Graph
 {
-    /** CURRENT TODOS
-     *  Breath-First
-     */
+    
     class ListGraph
     {
         /// <summary>
@@ -21,6 +24,10 @@ namespace Graph
         
         protected Dictionary<string, int> nodeName = new Dictionary<string, int>();
         protected List<List<Node>> adList = new List<List<Node>>();
+        protected int _length = 0;
+        public int length {
+            get { return _length; }
+        }
 
         /// <summary>
         /// Constructor for a file path contained by a string
@@ -36,6 +43,7 @@ namespace Graph
                     Regex rgx = new Regex(@"[\s]+");
                     string[] nodes = rgx.Split(line);
                     nodeName.Add(nodes[0],i);
+                    _length++;
                     List<Node> connections = new List<Node>();
                     for (int count = 1; count < nodes.Length - 1; count += 2) {
                         try {
@@ -61,6 +69,28 @@ namespace Graph
         public ListGraph() {
             nodeName = new Dictionary<string, int>();
             adList = new List<List<Node>>();
+        }
+        /// <summary>
+        /// Turns adList into a 2d double array for the intentions of performing mathematical operations on it.
+        /// Will still be parrallel to nodeName
+        /// </summary>
+        /// <returns>A 2D array representation of adList.</returns>
+        public double[,] toArray() {
+           
+            double[,] list = new double[nodeName.Count,nodeName.Count];
+            
+            for (int count = 0; count < list.GetLength(1); count++)  //sets entire array to 0s
+                for (int i = 0; i < list.GetLength(1); i++)
+                    list[count, i] = 0;
+            
+            for(int count = 0; count < nodeName.Count; count++) { //puts weights at appropriate postions in array 
+                List<Node> line = adList[count];
+                for (int i = 0; i < line.Count; i++) {
+                    int index = nodeName[line[i].name];
+                    list[count, index] = line[i].weight;
+                }
+            }
+            return list;
         }
         /// <summary>
         /// Adds a single directed edge to a vertex to an another already existing vertex
@@ -135,9 +165,10 @@ namespace Graph
         public void addNode(string _name) {
             try {
                 nodeName.Add(_name, nodeName.Count);
+                _length++;
                 adList.Add(new List<Node>());
             }
-            catch(Exception e) {
+            catch(Exception) {
                 Console.WriteLine("Node already exists. No Node was added");
             }
         }
@@ -151,6 +182,7 @@ namespace Graph
                     removeAllEdges(_name);
                     adList.Remove(adList[nodeName[_name]]);
                     nodeName.Remove(_name);
+                    _length--;
 
                     Dictionary<string, int>.KeyCollection keys = nodeName.Keys;
                     string[] names = new string[nodeName.Count];
@@ -276,6 +308,19 @@ namespace Graph
 
             return sb.ToString();
         }
+        /// <summary>
+        /// Finds the name of a node given the nodes index number in the adjacency list
+        /// </summary>
+        /// <param name="key">Index number of the node</param>
+        /// <returns>Name of the node at that specific index</returns>
+        public string this[int key] {
+            get {
+                Dictionary<string, int>.KeyCollection keys = nodeName.Keys;
+                string[] names = new string[nodeName.Count];
+                keys.CopyTo(names, 0);
+                return names[key];
+            }
+        }
 
         internal class Node {
             /// <summary>
@@ -286,6 +331,12 @@ namespace Graph
             public string parent = "";
             public string name;
             public double weight;
+            /// <summary>
+            /// Creates a node with a given weight. 1 is determined to be unweighted. Negatives are converted to 1
+            /// </summary>
+            /// <param name="_parent">Name of parent connection</param>
+            /// <param name="_name">name of node</param>
+            /// <param name="_weight">value of weight</param>
             public Node(string _parent,string _name, double _weight) {
                 parent = _parent;
                 name = _name;
@@ -294,8 +345,14 @@ namespace Graph
                 else
                     weight = 1;
             }
-            public Node(string _name) {
+            /// <summary>
+            /// Created an unweighted node
+            /// </summary>
+            /// <param name="_name">name of node</param>
+            /// <param name="_parent">name of parent connection of node</param>
+            public Node(string _name,string _parent) {
                 name = _name;
+                parent = _parent;
                 weight = 1;
             }
         }
