@@ -1,0 +1,9 @@
+C:\Users\Troy Frazier\Desktop\MarkovChain\MarkovChain\bin\Debug\netcoreapp1.1\MarkovChain.deps.json
+C:\Users\Troy Frazier\Desktop\MarkovChain\MarkovChain\bin\Debug\netcoreapp1.1\MarkovChain.runtimeconfig.json
+C:\Users\Troy Frazier\Desktop\MarkovChain\MarkovChain\bin\Debug\netcoreapp1.1\MarkovChain.runtimeconfig.dev.json
+C:\Users\Troy Frazier\Desktop\MarkovChain\MarkovChain\bin\Debug\netcoreapp1.1\MarkovChain.dll
+C:\Users\Troy Frazier\Desktop\MarkovChain\MarkovChain\bin\Debug\netcoreapp1.1\MarkovChain.pdb
+C:\Users\Troy Frazier\Desktop\MarkovChain\MarkovChain\obj\Debug\netcoreapp1.1\MarkovChain.csprojResolveAssemblyReference.cache
+C:\Users\Troy Frazier\Desktop\MarkovChain\MarkovChain\obj\Debug\netcoreapp1.1\MarkovChain.AssemblyInfo.cs
+C:\Users\Troy Frazier\Desktop\MarkovChain\MarkovChain\obj\Debug\netcoreapp1.1\MarkovChain.dll
+C:\Users\Troy Frazier\Desktop\MarkovChain\MarkovChain\obj\Debug\netcoreapp1.1\MarkovChain.pdb
