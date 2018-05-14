@@ -6,7 +6,7 @@ namespace Graph
     {
         static void Main(string[] args)
         {
-            ListGraph ports = new ListGraph("test.txt");
+            ListGraph ports = new ListGraph("airport.txt");
             Console.WriteLine("Printing List...");
             Console.WriteLine(ports + "\n"); //Inital print
             ports.addNode("LON");
@@ -32,6 +32,10 @@ namespace Graph
             ports.breathSearchPrint("MOB"); //Print of the graph reconnected into one graph
             ports.removeEdge("AUS", "SAT");
             Console.WriteLine(ports + "\n");
+            /*Display nodes by traversing Array */
+            for(int count = 0; count < ports.length; count++)
+                Console.Write(ports[count] + " ");
+            Console.WriteLine();
 
         }
     }
