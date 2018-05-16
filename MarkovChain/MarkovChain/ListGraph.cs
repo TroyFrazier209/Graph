@@ -1,6 +1,6 @@
 ﻿/*
  * Author Troy Frazier
- * Last Updated: 5/14/2018
+ * Last Updated: 5/15/2018
  * Class: Creates an adjacency list representation of a graph
  */
 using System;
@@ -91,6 +91,21 @@ namespace Graph
                 }
             }
             return list;
+        }
+        public int[] getConnections(string name) { //Not checked yet
+            int[] connections = null;
+            try {
+                int index = nodeName[name];
+                List<Node> line = adList[index];
+                connections = new int[line.Count];
+                for (int count = 0; count < line.Count; count++)
+                    connections[count] = nodeName[line[count].name];
+               
+            }
+            catch (Exception) {
+                throw new KeyNotFoundException("Key not found in adjacency list");
+            }
+            return connections;
         }
         /// <summary>
         /// Adds a single directed edge to a vertex to an another already existing vertex
