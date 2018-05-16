@@ -6,17 +6,25 @@ C# Graph:  <br />
 C# MarkovChain <br />
   Markov Chain extends the class ListGraph from Graph and applies Markov Chain applications on graphs as long as the graph fits the rules of a Markov Chain <br />
   
+C# BipartiteGraph <br />
+  Static class BipartiteGraph checks a graph to see if the graph is bipartite or not. Can also return two partitions of the graph.
+  <br />
+  
 MIPS Assembly Graph Movement: <br />
   Through a Dynamic 2D array that represents an unweighted nondirected graph, the program will find the possible moves at a certain amount of turns through a Markov Chain system. <br />
   
-MazeGeneration: <br />
+Java MazeGeneration: <br />
   Using Disjoint sets and union by size, the program creates a randomly generated maze.<br />
-Dijkstra: <br />
+  
+Java Dijkstra: <br />
   Uses an adjacency list to find the shortest route in a graph from A to B <br />
 
 Created By Troy Frazier <br />
 
 ChangeLog: <br />
+5/16/2018 Graph: Version 1.03 added a function to return an int array with the indexes of the connections of one node.<br />
+
+5/16/2018 BipartiteGraph: Version 1.0 completed <br />
 
 5/14/2018 Graph: Version 1.02 Added operator overload on [] to display node names, added length variable, and added a conversion to a 2D array. <br />
 
