@@ -22,6 +22,8 @@ Java Dijkstra: <br />
 Created By Troy Frazier <br />
 
 ChangeLog: <br />
+7/28/2018 Graph: Version 1.04 merged MarkovChain and BipartiteGraph projects into Graph. Namespaces kept <br />
+
 5/16/2018 Graph: Version 1.03 added a function to return an int array with the indexes of the connections of one node.<br />
 
 5/16/2018 BipartiteGraph: Version 1.0 completed <br />
