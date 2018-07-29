@@ -1,9 +1,0 @@
-C:\Users\Troy Frazier\Desktop\BipartiteGraph\BipartiteGraph\bin\Debug\netcoreapp1.1\BipartiteGraph.deps.json
-C:\Users\Troy Frazier\Desktop\BipartiteGraph\BipartiteGraph\bin\Debug\netcoreapp1.1\BipartiteGraph.runtimeconfig.json
-C:\Users\Troy Frazier\Desktop\BipartiteGraph\BipartiteGraph\bin\Debug\netcoreapp1.1\BipartiteGraph.runtimeconfig.dev.json
-C:\Users\Troy Frazier\Desktop\BipartiteGraph\BipartiteGraph\bin\Debug\netcoreapp1.1\BipartiteGraph.dll
-C:\Users\Troy Frazier\Desktop\BipartiteGraph\BipartiteGraph\bin\Debug\netcoreapp1.1\BipartiteGraph.pdb
-C:\Users\Troy Frazier\Desktop\BipartiteGraph\BipartiteGraph\obj\Debug\netcoreapp1.1\BipartiteGraph.csprojResolveAssemblyReference.cache
-C:\Users\Troy Frazier\Desktop\BipartiteGraph\BipartiteGraph\obj\Debug\netcoreapp1.1\BipartiteGraph.AssemblyInfo.cs
-C:\Users\Troy Frazier\Desktop\BipartiteGraph\BipartiteGraph\obj\Debug\netcoreapp1.1\BipartiteGraph.dll
-C:\Users\Troy Frazier\Desktop\BipartiteGraph\BipartiteGraph\obj\Debug\netcoreapp1.1\BipartiteGraph.pdb
