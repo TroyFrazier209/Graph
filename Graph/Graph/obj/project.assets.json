@@ -7042,10 +7042,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Troy Frazier\\College Related\\Comp Programs\\Graph\\Graph\\Graph.csproj",
+      "projectUniqueName": "C:\\Users\\Troy Frazier\\Desktop\\Graph\\Graph\\Graph.csproj",
       "projectName": "Graph",
-      "projectPath": "C:\\Users\\Troy Frazier\\College Related\\Comp Programs\\Graph\\Graph\\Graph.csproj",
-      "outputPath": "C:\\Users\\Troy Frazier\\College Related\\Comp Programs\\Graph\\Graph\\obj\\",
+      "projectPath": "C:\\Users\\Troy Frazier\\Desktop\\Graph\\Graph\\Graph.csproj",
+      "outputPath": "C:\\Users\\Troy Frazier\\Desktop\\Graph\\Graph\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
