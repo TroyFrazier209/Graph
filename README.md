@@ -45,6 +45,6 @@ ChangeLog: <br />
 <br />
 
 News:<br />
-Plan to merge all the C# projects into one folder <br />
+
 
 Bugs:<br />
